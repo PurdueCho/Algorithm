@@ -38,12 +38,12 @@ Pi	10	20	10	20	15	40	200
 N 이 작기때문에 dfs 도 가능
 dp 가 빠름
 
-day에서 시작해서 퇴사일까지 최대값을 dp[day]에 저장
-dp[day]는 두가지 중에 최댓값을 저장
+day에서 시작해서 퇴사일까지 최대값을 DP[day]에 저장
+DP[day]는 두가지 중에 최댓값을 저장
 - 오늘의 스케쥴을 하는경우: DP[day +T[day]] + P[day]
 - 오늘의 스케쥴을 안하는 경우 : DP[day + 1]
 
-==> dp[day] = max(DP[day + 1], DP[day +T[day]] + P[day])
+==> DP[day] = max(DP[day + 1], DP[day +T[day]] + P[day])
 */
 
 #include <iostream>

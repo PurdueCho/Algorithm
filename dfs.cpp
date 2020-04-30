@@ -28,7 +28,9 @@ vector<int> a[8];
 void dfs(int x)
 {
     if (c[x]) return; // 이미 방문했다면 리턴
+
     c[x] = true;    // 아니면 방문처리
+    
     cout << x << ' ';
     for (int i = 0 ; i < a[x].size(); i++) { // 그리고 인접 노드 탐색
         int y = a[x][i];
